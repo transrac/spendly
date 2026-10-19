@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block title %}Privacy Policy — Spendly{% endblock %}
+
+{% block content %}
+
+<section class="features">
+    <div class="features-inner" style="display: grid; grid-template-columns: 1fr; max-width: var(--max-width); margin: 0 auto;">
+        <div class="feature-card">
+            <h1 class="auth-title" style="margin-bottom: 0.25rem;">Privacy Policy</h1>
+            <p class="auth-subtitle" style="margin-bottom: 2rem;">Last updated: October 2026</p>
+
+            <div style="font-size: 0.95rem; line-height: 1.8; color: var(--ink-soft);">
+                <h3 style="font-family: var(--font-display); font-size: 1.25rem; color: var(--ink); margin: 2.5rem 0 0.75rem; font-weight: 600;">1. Data We Collect</h3>
+                <p>We collect only the information you enter into Spendly — expense amounts, categories, dates, and descriptions. We do not collect payment details, government IDs, or sensitive personal data. We do not use tracking cookies for advertising purposes.</p>
+
+                <h3 style="font-family: var(--font-display); font-size: 1.25rem; color: var(--ink); margin: 2.5rem 0 0.75rem; font-weight: 600;">2. How We Use Your Data</h3>
+                <p>Your data is used solely to power your personal expense reports and summaries. We never sell, rent, or share your financial data with advertisers, data brokers, or third-party marketers.</p>
+
+                <h3 style="font-family: var(--font-display); font-size: 1.25rem; color: var(--ink); margin: 2.5rem 0 0.75rem; font-weight: 600;">3. Data Storage</h3>
+                <p>All data is stored locally on your device. We do not host your expense records on our servers. It is your responsibility to maintain backups of your local database file.</p>
+
+                <h3 style="font-family: var(--font-display); font-size: 1.25rem; color: var(--ink); margin: 2.5rem 0 0.75rem; font-weight: 600;">4. Third Party Services</h3>
+                <p>Spendly may use standard web fonts (Google Fonts) to display the interface. These services may collect minimal technical data (IP address, browser type) as part of their normal operation. We have no control over their practices.</p>
+
+                <h3 style="font-family: var(--font-display); font-size: 1.25rem; color: var(--ink); margin: 2.5rem 0 0.75rem; font-weight: 600;">5. Contact Us</h3>
+                <p>If you have questions about this Privacy Policy or how your data is handled, please reach out through the app's support channels.</p>
+            </div>
+
+            <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--border);">
+                <a href="{{ url_for('landing') }}" class="btn-primary">Back to Home</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
