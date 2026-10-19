@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block title %}Terms and Conditions — Spendly{% endblock %}
+
+{% block content %}
+
+<section class="features">
+    <div class="features-inner" style="display: grid; grid-template-columns: 1fr; max-width: var(--max-width); margin: 0 auto;">
+        <div class="feature-card">
+            <h1 class="auth-title" style="margin-bottom: 0.25rem;">Terms and Conditions</h1>
+            <p class="auth-subtitle" style="margin-bottom: 2rem;">Last updated: October 2026</p>
+
+            <div style="font-size: 0.95rem; line-height: 1.8; color: var(--ink-soft);">
+                <h3 style="font-family: var(--font-display); font-size: 1.25rem; color: var(--ink); margin: 2.5rem 0 0.75rem; font-weight: 600;">1. Acceptance of Terms</h3>
+                <p>By accessing and using Spendly, you accept and agree to be bound by the terms and provisions of this agreement. If you do not agree to abide by these terms, please do not use this service.</p>
+
+                <h3 style="font-family: var(--font-display); font-size: 1.25rem; color: var(--ink); margin: 2.5rem 0 0.75rem; font-weight: 600;">2. Use of Service</h3>
+                <p>Spendly is a personal finance tracking tool designed to help you monitor your expenses. You agree to use this service only for lawful purposes and in a way that does not infringe the rights of, restrict, or inhibit anyone else's use and enjoyment of the service.</p>
+
+                <h3 style="font-family: var(--font-display); font-size: 1.25rem; color: var(--ink); margin: 2.5rem 0 0.75rem; font-weight: 600;">3. User Data</h3>
+                <p>You retain full ownership of all expense data you enter into Spendly. We do not sell, share, or license your personal financial data to third parties. Your data is stored locally on your device and is your responsibility to backup.</p>
+
+                <h3 style="font-family: var(--font-display); font-size: 1.25rem; color: var(--ink); margin: 2.5rem 0 0.75rem; font-weight: 600;">4. Limitations of Liability</h3>
+                <p>Spendly is provided "as is" without any warranties, express or implied. We are not responsible for any financial decisions you make based on the data tracked by this application. Always consult a qualified financial advisor for important financial matters.</p>
+
+                <h3 style="font-family: var(--font-display); font-size: 1.25rem; color: var(--ink); margin: 2.5rem 0 0.75rem; font-weight: 600;">5. Changes to Terms</h3>
+                <p>We reserve the right to modify these terms at any time. Continued use of Spendly after any changes constitutes acceptance of the new terms.</p>
+
+                <h3 style="font-family: var(--font-display); font-size: 1.25rem; color: var(--ink); margin: 2.5rem 0 0.75rem; font-weight: 600;">6. Contact</h3>
+                <p>If you have questions about these Terms and Conditions, please contact us through the app's support channels.</p>
+            </div>
+
+            <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--border);">
+                <a href="{{ url_for('landing') }}" class="btn-primary">Back to Home</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
